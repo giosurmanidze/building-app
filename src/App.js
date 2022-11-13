@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Provider } from "react";
+import { AppContext } from "./utils/context";
+import {MainContent,Product,Cards,ItemDetails,Cart,} from './components'
+
+
+
+const getItems = () => {
+  const data = localStorage.getItem("items");
+  if (data) {
+    return JSON.parse(data);
+  } else {
+    return [];
+  }
+};
 
 function App() {
+  const [cart, setCart] = useState(getItems);
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(cart));
+  }, [cart]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <AppContext.Provider value={{ cart, setCart }}>
+          <Routes>
+            <Route path="/" element={<MainContent />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="product/:id" element={<Cards />} />
+            <Route path="product/table/:category" element={<ItemDetails />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </AppContext.Provider>
+      </BrowserRouter>
     </div>
   );
 }

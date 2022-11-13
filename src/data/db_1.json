@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "category": "მავთული",
+    "url": "https://caucasmetal.ge/images/optimized-product/wire.webp",
+    "types": [
+      {
+        "category_name": "შავიმავთული",
+        "url": "https://caucasmetal.ge/images/optimized-product/black_wire.webp",
+        "categoryId": 1
+      },
+      {
+        "category_name": "მოთუთიებულიმავთული",
+        "url": "https://caucasmetal.ge/images/optimized-product/galvanized_wire.webp",
+        "categoryId": 2
+      },
+      {
+        "category_name": "პევეცე",
+        "url": "https://caucasmetal.ge/images/optimized-product/pvc.webp",
+        "categoryId": 3
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "არმატურა",
+    "url": "https://caucasmetal.ge/images/optimized-product/rebar.webp",
+    "input": true,
+    "types": []
+  },
+  {
+    "id": 3,
+    "category": "გლინურა",
+    "url": "https://caucasmetal.ge/images/optimized-product/wire_rod.webp",
+    "types": []
+  },
+  {
+    "id": 4,
+    "category": "ბადე",
+    "url": "https://caucasmetal.ge/images/optimized-product/nets.webp",
+    "types": [
+      {
+        "category_name": "მავთულისბადე",
+        "url": "https://caucasmetal.ge/images/optimized-product/wire_nets.webp",
+        "categoryId": 1
+      }
+    ]
+  }
+]

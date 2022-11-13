@@ -1,0 +1,86 @@
+table {
+    border-collapse: collapse;
+    min-width: 900px;
+    width: 100%;
+    margin: 2rem auto;
+    color: #fff;
+    text-align: center;
+}
+
+table th,table td {
+    border:1px solid black;
+    padding: 5px;
+    color: #fff;
+    background-color: hsl(210deg 16% 19% / 52%);
+
+}
+
+table th tr th {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    color: #fff;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid hsl(210deg 16% 19% / 52%);
+}
+table th {
+    background-color: grey;
+    height: 70px;
+}
+table td {
+    padding: 5px;
+}
+
+table tr {
+    background-color: #616161;
+    
+}
+table tr:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+.counter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.counter button {
+    border: none;
+    display: inline-block;
+    width: 25px;
+    line-height: 38px;
+    background: #f1f1f1;
+    color: #444;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.counter .btn__1 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.counter .btn__2 {
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.counter input {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+}
+.add__to__cart {
+    width: 90px;
+    height: 27px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #feb600;
+    border: none;
+}
+.input__amount {
+    height: 20px;
+}

@@ -1,0 +1,231 @@
+main .article__container {
+  display: grid;
+  row-gap: 10em;
+  width: 100%;
+}
+
+main .main__container__text {
+  padding: 0 5vw;
+  margin-bottom: 5em;
+}
+main .main__img {
+  height: 100%;
+  width: 80%;
+  max-width: 100%;
+  border-top-right-radius: 50px;
+  object-fit: cover;
+
+}
+.article__container .main__container__text h2 {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.article__container .main__container__text p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: hsl(225deg 21% 68%);
+}
+main .last__one {
+  display: grid;
+  row-gap: 2em;
+  margin: 0 auto;
+  padding: 0 5vw;
+  width: 90%;
+}
+
+main .last__one h3 {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.last__one p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: hsl(225deg 21% 68%);
+}
+
+.last__one button {
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+}
+main .zink__section {
+  margin-top: 5em;
+  padding: 5vh 5vw 5vh 5vw;
+  background-color: hsl(360, 100%, 100%);
+}
+main .zink__article {
+  color: hsl(225deg 25% 13%);
+}
+.zink__article h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+}
+main .zink__article > * {
+  padding: 0 5vm 0 5vm;
+  line-height: 1.5;
+}
+.zink__article p {
+  font-size: 17px;
+  margin-top: 10px;
+}
+.zink__section img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.second__article .last {
+  margin-top: 30px;
+}
+.center_el_style {
+  background-color: hsl(225deg 46% 9%);
+  border: 1px solid transparent;
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .wrapper .second__article {
+    display: flex;
+    justify-content: space-around;
+  }
+  .zink__section {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 2rem;
+    height: 80vh;
+    padding: 5%;
+  }
+  .zink__section img {
+    width: 60%;
+  }
+  main .last__one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  main .wrapper .first__three {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+  main .wrapper .first__three article {
+    width: 30%;
+    height: 450px;
+    max-height: 450px;
+  }
+  main .main__img {
+    height: 50%;
+    width: 70%;
+    max-width: 100%;
+    object-fit: cover;
+    margin-left: 20%;
+  }
+
+
+}
+@media only screen and (min-width: 900px) and (max-width: 1175px) {
+  main .wrapper .first__three {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+    padding-top: 5%;
+  }
+  main .wrapper .first__three article {
+    width: 30%;
+    max-height: 450px;
+  }
+  .wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .article__container article {
+    display: grid;
+    row-gap: 1.5em;
+    min-height: 450px;
+    padding: 5% 5vw;
+    border-radius: 10px;
+  }
+  main .main__img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    object-fit: cover;
+  }
+  main .article__container {
+    margin-top: 15%;
+  }
+}
+.description__card {
+  font-size: 13px;
+}
+
+.sideBar {
+ display: flex;
+ gap: 3rem;
+}
+
+.main__divvv {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 5rem;
+  margin-top: 30px;
+}
+.main__divvv div {
+  flex: 1;
+}
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:20%;
+  margin-top: 35px;
+}
+
+
+
+.sidebar_links a{
+  text-decoration: none;
+  color: #fff;
+  width: 300px;
+}
+.sidebar_links a:hover {
+  padding: 15px 15px;
+  background-color: rgb(3, 3, 35);
+  border-radius: 15vw;
+
+}
+
+.active {
+  background-color: #FFA500;
+  padding: 15px 15px;
+  border-radius: 15vw;
+}
+
+
+.noNested_items img {
+  width: 150px;
+}

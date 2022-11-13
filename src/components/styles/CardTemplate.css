@@ -1,0 +1,52 @@
+.card {
+    display: grid;
+    row-gap: 1.5em;
+    min-height: 430px;
+    padding: 7% 3em;
+    border: 1px solid #feb600;
+    border-radius: 10px;
+}
+.card:hover {
+    opacity: 1;
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+
+}
+.head p {
+    line-height: 1.5rem;
+    color: #9ca5bf;
+    font-size: 17px;
+}
+.head h1 {
+    font-size: 200%;
+    font-weight: bolder;
+    color: #fff;
+}
+.btn {
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width:900px) {
+    .card {
+        height: 500px;
+        padding: 7% 5%;
+        width: 100%;
+
+
+    }
+    .card p {
+        line-height: 1.5;
+        font-size: 18px;
+    }
+}
+

@@ -1,0 +1,14 @@
+h1 {
+    color: white;
+}
+.test__img {
+    width: 200px;
+    height: 200px;
+}
+.divvv {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    gap: 2rem;
+}

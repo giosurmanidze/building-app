@@ -1,0 +1,77 @@
+footer .footer__header {
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer .first,
+.footer .third {
+  display: grid;
+  row-gap: 1em;
+}
+footer {
+  display: grid;
+  row-gap: 4em;
+  width: 100%;
+  background-color: hsl(0deg 0% 7%);
+  border-top: 5px solid #feb600;;
+  padding-left: 5%;
+  padding: 5em 5vw 0 5vw;
+  padding-bottom: 10vh;
+}
+.copyright div{
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+}
+.copyright div button {
+  cursor: pointer;
+}
+footer .first,.contacts,.hours{
+    display: grid;
+    row-gap: 1em;
+    color: hsl(225deg 21% 68%);
+    font-size: 17px;
+}
+.contact-container .contacts {
+    display: grid;
+    row-gap: 1em;
+}
+footer button {
+    font-size: 16px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  color: hsl(225deg 21% 68%);
+
+}
+
+.copyright,.copyright button {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer__elm {
+  line-height: 1.6rem;
+}
+
+@media screen and (min-width:900px) {
+    .footer {
+      grid-template-columns:repeat(3,1fr) ;
+      padding-left: 13%;
+      justify-items: center;
+    }
+
+}
+@media screen and (max-width:417px){
+    .copyright div {
+     flex-direction: column;
+     align-items: center;
+     gap: .5rem;
+    }
+}

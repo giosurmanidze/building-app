@@ -1,0 +1,41 @@
+.card__item  {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card__items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.nested__cards {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  
+}
+.nested__cards div img {
+  object-fit: cover;
+  max-height: 180px;
+  width: 180px;
+
+
+}
+.nested__cards div {
+  padding-top: 200px;
+  width: 80%;
+  display: flex;
+  padding-bottom: 20px;
+  padding-left:260px ;
+  align-items: center;
+  gap: 2rem;
+}
+.nested__cards div h1 {
+  font-size: 2em;
+  color: #ffffff;
+}
