@@ -1,4 +1,4 @@
-import {NestedCards} from '../components'
+import { NestedCards } from "../components";
 
 const NoNestedCards = ({ dataa, category }) => {
   return (
@@ -6,13 +6,21 @@ const NoNestedCards = ({ dataa, category }) => {
       {dataa.map((data) => {
         if (data.types.length === 0 && data.category === category) {
           return (
-            <div className="noNested_items" key={Math.random() * 100000}>
-              <h1>{data.category}</h1>
-              <img src={data.url} />
+            <div className="nested__cards">
+              <div className="noNested_items" key={Math.random() * 100000}>
+                <h1>{data.category}</h1>
+                <img src={data.url} />
+              </div>
             </div>
           );
         } else {
-          return <NestedCards key={Math.random() * 100000} data={data.types} category={category} />;
+          return (
+            <NestedCards
+              key={Math.random() * 100000}
+              data={data.types}
+              category={category}
+            />
+          );
         }
       })}
     </div>

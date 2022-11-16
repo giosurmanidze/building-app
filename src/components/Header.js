@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./styles/Header.css";
 import logo from "../assets/images/logo1.png";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({ itemNumber,setShowCart }) => {
   const [show, setShow] = useState(false);
+
+  const navigate = useNavigate();
 
   // header background
   const controlNavbar = () => {
@@ -25,10 +27,10 @@ const Header = ({ itemNumber,setShowCart }) => {
   return (
     <header className={`heading ${show && "heading__bg"}`}>
       <div className="left--side">
-        <img className="logo" src={logo} />
+        <img className="logo" onClick={() => navigate("/building-app")} src={logo} />
       </div>
       <div className="nav__links">
-        <Link to="/">მთავარი</Link>
+        <Link to="/building-app">მთავარი</Link>
         <Link to="/product">პროდუქცია</Link>
         <h1>კონტაქტი</h1>
       </div>

@@ -48,7 +48,6 @@ const Cart = () => {
           })
         )}
       </div>
-      <Footer />
     </>
   );
 };

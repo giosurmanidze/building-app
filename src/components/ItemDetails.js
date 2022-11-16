@@ -5,17 +5,17 @@ import db_2 from "../data/db_2.js";
 import Table from "./Layout/Table";
 import SideBar from "./Layout/SideBar";
 import SideBarCart from "./Layout/SideBarCart";
-import {Footer,Header,NoNestedCards,} from '../components'
-
+import {Footer,NoNestedCards,} from '../components'
+import { AppContext } from "../utils/context";
+import { useContext } from "react";
 
 const ItemDetails = () => {
-  const [itemNumber, setItemNumber] = useState(0);
   const [showCart, setShowCart] = useState(false);
   const { category } = useParams();
+  const {itemNumber,setItemNumber} = useContext(AppContext);
 
   return (
     <>
-      <Header itemNumber={itemNumber} setShowCart={setShowCart} />
       {showCart && (
         <SideBarCart category={category} setShowCart={setShowCart} />
       )}
@@ -44,7 +44,6 @@ const ItemDetails = () => {
           })}
         </div>
       </div>
-      <Footer />
     </>
   );
 };

@@ -10,31 +10,11 @@ import {
   ShoppingCartOutlined,
   StarsRounded,
 } from "@mui/icons-material";
-import PopUp from "./Layout/PopUp";
-import {Header,Banner,Footer} from '../components'
-
-
+import { Banner, Footer } from "../components";
 
 const Article = () => {
-
-  const [size, setSize] = useState({
-    width: window.innerWidth,
-  });
-
-  /// get screen size every changes
-  const updateSize = () =>
-    setSize({
-      width: window.innerWidth,
-    });
-  useEffect(() => (window.onresize = updateSize), []);
-
   return (
     <main>
-      {/*  conditional rendering  */}
-
-      {size.width < 600 ? <PopUp /> : <Header/>}
-
-      {/*  conditional rendering  */}
       <Banner />
       <div className="article__container wrapper">
         <div className="first__three">
@@ -67,7 +47,7 @@ const Article = () => {
                 <LocalShipping
                   style={{ color: "#feb600", width: "64px", height: "64px" }}
                 />
-              } 
+              }
               title="ონლაინ შეკვეთა"
               desc={descriptions.desc3}
             />
@@ -115,7 +95,6 @@ const Article = () => {
           </p>
         </article>
       </section>
-      <Footer />
     </main>
   );
 };
