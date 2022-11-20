@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../utils/context";
 import "./styles/cart.css";
-import {Footer,Header} from '../components'
+import {Header} from '../components'
 
 
 const Cart = () => {

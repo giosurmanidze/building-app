@@ -10,9 +10,8 @@ import { AppContext } from "../utils/context";
 import { useContext } from "react";
 
 const ItemDetails = () => {
-  const [showCart, setShowCart] = useState(false);
   const { category } = useParams();
-  const {itemNumber,setItemNumber} = useContext(AppContext);
+  const {itemNumber,setItemNumber,setShowCart,showCart} = useContext(AppContext);
 
   return (
     <>
