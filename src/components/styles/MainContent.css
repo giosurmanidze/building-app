@@ -206,22 +206,28 @@ main .zink__article > * {
 }
 
 
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17%;
+  margin-top: 35px;
+}
 
-.sidebar_links a{
+.sidebar_links a {
   text-decoration: none;
   color: #fff;
   width: 300px;
 }
 .sidebar_links a:hover {
-  padding: 15px 15px;
   background-color: rgb(3, 3, 35);
+  padding: 15px 15px;
   border-radius: 15vw;
-
 }
 
 .active {
-  background-color: #FFA500;
+  background-color: #ffa500;
   padding: 15px 15px;
   border-radius: 15vw;
-}
 
+}

@@ -5,13 +5,14 @@ import db_2 from "../data/db_2.js";
 import Table from "./Layout/Table";
 import SideBar from "./Layout/SideBar";
 import SideBarCart from "./Layout/SideBarCart";
-import {Footer,NoNestedCards,} from '../components'
+import {NoNestedCards} from '../components'
 import { AppContext } from "../utils/context";
 import { useContext } from "react";
 
 const ItemDetails = () => {
   const { category } = useParams();
   const {itemNumber,setItemNumber,setShowCart,showCart} = useContext(AppContext);
+
 
   return (
     <>

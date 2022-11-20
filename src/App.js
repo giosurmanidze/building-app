@@ -1,4 +1,3 @@
-import { lazy, Suspense } from "react";
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -15,11 +14,7 @@ import {
 } from "./components";
 import PopUp from "./components/Layout/PopUp";
 
-// const MainContent = lazy(() => import("./components/MainContent"));
-// const Product = lazy(() => import("./components/Product"));
-// const Cards = lazy(() => import("./components/Cards"));
-// const ItemDetails = lazy(() => import("./components/ItemDetails"));
-// const Cart = lazy(() => import("./components/Cart"));
+
 
 const getItems = () => {
   const data = localStorage.getItem("items");
@@ -55,12 +50,22 @@ const App = () => {
         {size.width < 600 ? (
           <PopUp />
         ) : (
-          <Header setShowCart={setShowCart} itemNumber={itemNumber} setItemNumber={setItemNumber} />
+          <Header
+            setShowCart={setShowCart}
+            itemNumber={itemNumber}
+            setItemNumber={setItemNumber}
+          />
         )}
         <AppContext.Provider
-          value={{ cart, setCart, itemNumber, setItemNumber, showCart,setShowCart }}
+          value={{
+            cart,
+            setCart,
+            itemNumber,
+            setItemNumber,
+            showCart,
+            setShowCart,
+          }}
         >
-          {/* <Suspense fallback={<h1>Loading...</h1>}> */}
           <Routes>
             <Route path="/building-app" element={<MainContent />} />
             <Route path="/product" element={<Product />} />
@@ -68,7 +73,6 @@ const App = () => {
             <Route path="product/table/:category" element={<ItemDetails />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
-          {/* </Suspense> */}
         </AppContext.Provider>
       </BrowserRouter>
       <Footer />
