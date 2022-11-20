@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/building-app/static/css/main.564f677f.css",
-    "main.js": "/building-app/static/js/main.c5592d14.js",
+    "main.css": "/building-app/static/css/main.d89289e2.css",
+    "main.js": "/building-app/static/js/main.0b613c31.js",
     "static/media/wallpaper-1920.jpg": "/building-app/static/media/wallpaper-1920.4ef92a6d5f0e73b2777a.jpg",
     "static/media/zink-section-photo-1280.jpg": "/building-app/static/media/zink-section-photo-1280.259d4cafd52950386cd9.jpg",
     "static/media/article-photo-1280.jpg": "/building-app/static/media/article-photo-1280.7203b2f5c596a9a8bf91.jpg",
@@ -11,11 +11,11 @@
     "static/media/bpg-web-001-webfont.woff": "/building-app/static/media/bpg-web-001-webfont.b3535fb171c450abfa1f.woff",
     "static/media/bpg-web-001-webfont.woff2": "/building-app/static/media/bpg-web-001-webfont.123074664ee41a553681.woff2",
     "index.html": "/building-app/index.html",
-    "main.564f677f.css.map": "/building-app/static/css/main.564f677f.css.map",
-    "main.c5592d14.js.map": "/building-app/static/js/main.c5592d14.js.map"
+    "main.d89289e2.css.map": "/building-app/static/css/main.d89289e2.css.map",
+    "main.0b613c31.js.map": "/building-app/static/js/main.0b613c31.js.map"
   },
   "entrypoints": [
-    "static/css/main.564f677f.css",
-    "static/js/main.c5592d14.js"
+    "static/css/main.d89289e2.css",
+    "static/js/main.0b613c31.js"
   ]
 }
